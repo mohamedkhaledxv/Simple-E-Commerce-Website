@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 50px; 
+    vertical-align: middle;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-items img {
+    height: 25px;
+    width: 25px; 
+
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-items li a:hover{ 
+    background-color: #555;
+    border-radius: 5px;
+
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+}
+.main-section h2{
+    font-size: 2em;
+    margin:20px 20px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+.all-products-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    padding:20px 40px;
+
+}
+
+
+
+.product-item {
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: calc(33% - 2rem);
+    box-sizing: border-box;
+}
+
+.product-item span{
+    color: #333;
+    font-weight: bold;
+
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item h3 {
+    margin: 0.5rem 0;
+}
+
+.product-item p {
+    margin: 0.5rem 0;
+    color: #555;
+}
+
+
+.add-to-cart {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #555;
+}
+
+#show-more{
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #c44444;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#show-more:hover {
+    background-color: #fa9090;
+}
+
+
+.up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c44444;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+
+}
+
+.up-arrow:hover {
+    background-color: #fa9090;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}

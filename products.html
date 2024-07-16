@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Store</title>
+    <link rel="stylesheet" href="./Styles/products.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Images/MK-LOGO.png" alt="MK Store Logo">
+            </div>
+            <ul class="nav-items">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li id="user-nav"><a href="login.html">Login</a></li>
+                <li><a href="cart.html">
+                    <img src="./Images/shopping_cart_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Cart">
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="main-section">
+        <h2>Shop Now</h2>
+        <div class="all-products-container" id="product-list"></div>
+        <button id="show-more" class="show-more">Show More</button>
+
+    </section>
+    <div class="up-arrow" id="up-arrow">&#9650;</div>
+    <footer>
+        <p>Contact us: mohamedkhaledxv8@gmail.com</p>
+        <br>
+        <p>&copy; 2024 MK. All rights reserved.</p>
+    </footer>
+    <script src="./js/products.js"></script>
+</body>
+</html>

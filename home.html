@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Store</title>
+    <link rel="stylesheet" href="./Styles/home.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="Images/MK-LOGO.png" alt="MK Store Logo">
+            </div>
+            <ul class="nav-items">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li id="user-nav"><a href="login.html">Login</a></li>
+                <li><a href="cart.html">
+                    <img src="./Images/shopping_cart_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt="Cart">
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="welcome-section">
+        <div class="container">
+            <div class="welcome-content">
+                <div class="welcome-text">
+                    <h2>Welcome to MK Store</h2>
+                    <p>Use promocode "MK10" to get discounts up to 50% off for your first purchase!</p>
+                    <a href="products.html">    
+                        <button>Shop Now</button>
+                    </a>
+                </div>
+                <div class="welcome-image">
+                    <img src="./Images/Lovepik_com-400761133-ecommerce-shopping.png" alt="Welcome Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="slider-section">
+        <div class="img-slider">
+            <img class="slides" src="https://www.salesforce.com/content/dam/blogs/ca/Blog%20Posts/247-customer-service-og.jpg" alt="Image 1">
+            <img class="slides" src="https://static.vecteezy.com/system/resources/previews/005/241/546/non_2x/fast-delivery-truck-service-on-the-road-car-van-with-landscape-behind-flat-style-design-and-map-pins-a-and-b-illustration-isolated-on-light-blue-background-symbol-of-delivery-company-vector.jpg" alt="Image 2">
+            <img class="slides" src="https://voyado.com/wp-content/uploads/2022/11/customer-journey.svg" alt="Image 3">
+            <img class="slides" src="https://voyado.com/wp-content/uploads/2023/05/ecommerce-merchandising-960x480.jpg" alt="Image 4">
+        
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            </div>
+        </div>
+    </section>
+
+    <section >
+        <div class="best-sellers-container">
+            <h2>Best Sellers Items</h2>
+            <div class="best-seller-items" id="best-seller-items">
+            </div>
+        </div>
+    </section>
+    <div class="up-arrow" id="up-arrow">&#9650;</div>
+    <footer>
+        <p>Contact us: mohamedkhaledxv8@gmail.com</p>
+        <br>
+        <p>&copy; 2024 MK. All rights reserved.</p>
+    </footer>
+<script src="./js/slider.js"></script>
+<script src="./js/home.js"></script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo img {
+    height: 50px; 
+    vertical-align: middle;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-items img {
+    height: 25px;
+    width: 25px; 
+
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+
+.nav-items li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.nav-items li a:hover{ 
+    background-color: #555;
+    border-radius: 5px;
+
+}
+
+.welcome-section {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.welcome-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.welcome-text {
+    max-width: 50%;
+}
+
+.welcome-text button{
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 200px;
+    margin-left: 200px;
+    margin-top: 40px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-text button:hover {
+    background-color: #555;
+}
+
+.welcome-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.welcome-text p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+.welcome-image img {
+    height: 60vh;
+}
+
+.welcome-section {
+    background-color: white;
+    margin: 20px 20px;
+    border-radius: 20px;
+
+}
+
+.slider-section {
+    background-color: white;
+    margin: 20px 20px;
+    padding: 20px;
+    border-radius: 20px;
+}
+.img-slider {
+    position: relative;
+    width: 70%;
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: none;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 2em;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: red;
+}
+
+
+.best-sellers-container {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.best-sellers-container h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    background-color: red;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.best-seller-items {
+    max-width: 1000px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.best-item {
+    width: 300px;
+    border: 5px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.best-item img {
+    width: 250px;
+    height: 300px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    border: 3px solid #ddd;
+}
+
+.best-item h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.best-item p{
+    font-size: 1.2em;
+    color: #777;
+    margin-bottom: 20px;
+
+}
+
+.best-item button{
+    padding: 10px 20px;
+    font-size: 20px;
+    width: 200px;
+    margin-left: 30px;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    
+}
+
+.best-item button:hover {
+    background-color: #555;
+}
+
+.up-arrow {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #c44444;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 1000;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
